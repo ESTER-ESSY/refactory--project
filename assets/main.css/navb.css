@@ -1,50 +1,7 @@
-.navbar-expand-sm {
-    background-color: aqua;
 
-}
 
-/* main */
-.welcome{
-    height: 50vh;
-    overflow: hidden;
-    position: relative;
-}
 
-.carousel,
-.carousel-inner,
-.carousel-item,
-.carousel-item::before{
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: auto;
-    content: "";
-    background-color: rgba(24, 24, 240, 0.226);
-}
 
-.carousel {
-    height:10px
-
-}
-.welcome {
-    color:greenyellow;
-    font-size: 10rem;
-    font-weight: bold;
-}
-
-.statistics{
-    padding: 80px;    
-}
-
-body {
-    font-family: Arial, sans-serif;
-  }
-  
   footer {
     background: #333;
     color: #fff;
