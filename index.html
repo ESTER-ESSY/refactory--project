@@ -10,65 +10,119 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-sm bg-success  ">
+    <nav class="navbar navbar-expand-sm bg-white">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-white navbar-dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
               <img src="assets/images/logo2.png" alt="logo" style="width:100px;" class="rounded-pill" > 
             </a>
           </div>
         </nav>
-        <a class="navbar-brand" href="project.html">KGL</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <div class="wrapper">
+          <nav class="navdropdown">
+            <div class="container mt-3 ">
+              
+              <div class="dropdown" >
+                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" >
+                  STOCK
+                </button>
+                <ul class="dropdown-menu">
+                  <div class="dropdown"> 
+                    <button>  
+              <li class="stock">STOCK IN<a href="inventory.html"><span class=""></span></a>
+                <p>230 bags-Beans</p>
+                <p>25 bags-Rice</p>
+                <p>120 bags-Cowpeas</p>
+              </li> 
+              </button>
+            </div>
+            
+            <div class="dropdown"> 
+              <button>
+        <li class="stock">STOCK OUT<a href="inventory.html"><span class=""></span></a>
+          <p>250 bags-Beans</p>
+          <p>50 bags-Rice</p>
+          <p>160 bags-Cowpeas</p>
+        </li> 
+        </button>
+      </div>
+      <div class="dropdown"> 
+        <button>
+  <li class="stock">CUSTOMER ORDERS<a href="inventory.html"><span class=""></span></a>
+    <p>150 bags-Beans</p>
+    <p>86 bags-Rice</p>
+    <p>30 bags-Cowpeas</p>
+  </li> 
+  </button>
+</div>
+<div class="dropdown"> 
+  <button >
+<li class="stock">NEW STOCK<a href="inventory.html"><span class=""></span></a>
+<p>150 bags-Beans</p>
+<p>75 bags-Rice</p>
+<p> bags-Cowpeas</p>
+</li> 
+</button>
+</div>
+<div class="dropdown"> 
+  <button>
+<li class="stock">OLD STOCK<a href="inventory.html"><span class=""></span></a>
+  <p>250 bags-Beans</p>
+  <p>50 bags-Rice</p>
+  <p>160 bags-Cowpeas</p>
+</li> 
+</button>
+</div>
+  </ul>
+</nav>
+
+  </div>
+        <h1 class="title">K G L<p class="text">'number one grains and cereal store' </p>
+        </h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="home.html">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-info" type="button">Search</button>
-          </form>
+        <nav >
+        <div class="collapse navbar-collapse" id="mynavbar" >
+          <div class="right-side-section">
+            <div class="user-session-btns">
+              <button type="button" class="btn"> 
+            <a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+            </button>
+            <button type="button" class="btn"> 
+            <a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Log In</a>
+             </button>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-
-  </header>
+      </nav>
+    </div>
+  </div>
+  </nav>
+</header>
   <main>
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="/assets/images/bags.png" alt="bags" class="carousel" style="width:100%" height="400px">
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="welcome">Welcome to KGL</h1>
-          <p>Your number one cereal and grains center</p>
+          <h1 class="welcome">Welcome To KGL</h1>
+          <p>"Your number one cereal and grains center"</p>
       </div>
       </div>
         <div class="carousel-item ">
-          <img src="/assets/images/beans.png" alt="creals" class="carousel" style="width:100%" height="400px">
+          <img src="/assets/images/workers.png" alt="creals" class="carousel" style="width:100%" height="400px">
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="welcome">welcome to KGL</h1>
-          <p>Your number one cereal and grains center</p>
+          <h1 class="welcome">Welcome To KGL</h1>
+          <p>"Your number one cereal and grains center"</p>
       </div>
     </div>
         <div class="carousel-item ">
-          <img src="/assets/images/cereal.png" alt="cereals" class="carousel" style="width:100%" height="400px">
+          <img src="/assets/images/seeds.png" alt="cereals" class="carousel" style="width:100%" height="400px">
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="welcome">welcome to KGL</h1>
-          <p>Your number one cereal and grains center</p>
+          <h1 class="welcome">Welcome To KGL</h1>
+          <p>"Your number one cereal and grains center"</p>
       </div>
       </div>
 
@@ -81,108 +135,111 @@
     </div>
   </div>
   </div>
-    <div class="statistics container-fluid">
-      <div class="row">
-          <div class="col">
-              <div class="card">
-                  <img src="assets/images/maize.png" class="card-img-top" alt="maize" width="50px" height="150px">
-                  <div class="card-body">
-                      <h3 class="card-title"> MAIZE</h3>
-                      <ul class="card-text">
-                        <li>stock in: 200bags</li>
-                        <li>stock out: 102bags</li>
-                        <li>Available: 118bags</li>
-                        </ul>
-                  </div>
-              </div>
+
+  
+    <div class="container-fluid mt-3" bg-secondary>
+      <h1 class="text-4">About us</h1>
+        <p class="text">Happy Hoe Grocery Ltd. is a wholesale produce distributor dealing in cereals with two
+          branches in different locations </p>
+          <p class="text">KGL deals in beans, grain maize, cowpeas, g-nuts, rice and soybeans. 
+          
+          <ul class="text-3">
+            <p>It gets produce from: </p>
+            <li>individual dealers with produce not less than a tone (1000 kg) </li>
+          <li>Other companies that are willing to sell to KGL also get their products from its own two
+          farms in Maganjo and Matugga.</li>
+          <li>KGL has a manager and two sales agents </li>
+          </p>
+    
+      <div class="container-fluid">
+        <div class="row g-2">
+          <div class="col-3 bg-white">
+            <h1 class="text">Our vision</h1>
+            <p class="text-2">"staying focused." </p> 
+            <p class="text-2">"Going further"</p>
+            
           </div>
-          <div class="col">
-              <div class="card">
-                  <img src="assets/images/cowpeas.png" class="card-img-top" alt="cowpeas" width="50px" height="150px">
-                  <div class="card-body">
-                      <h3 class="card-title">COWPEAS</h3>
-                      <ul class="card-text">
-                        <li>stock in: 100bags</li>
-                        <li>stock out: 65bags</li>
-                        <li>Available: 35bags</li>
-                        </ul>
+          <div class="col-9 bg-success">
+            <h1 class="text">Our Products</h1>
+            <div class="statistics container-fluid">
+              <div class="row">
+                  <div class="col">
+                      <div class="card">
+                          <img src="assets/images/maize.png" class="card-img-top" alt="maize" width="50px" height="150px">
+                          <div class="card-body">
+                              <h3 class="card-title"> MAIZE</h3>
+                              
+                          </div>
+                      </div>
                   </div>
-              </div>
-          </div>
-          <div class="col">
-              <div class="card">
-                  <img src="assets/images/gnuts.png" class="card-img-top" alt="gnuts" width="50px" height="150px">
-                  <div class="card-body">
-                      <h3 class="card-title"> GROUNDNUTS</h3>
-                      <ul class="card-text">
-                        <li>stock in: 150bags</li>
-                        <li>stock out: 70bags</li>
-                        <li>Available: 80bags</li>
-                        </ul>
+                  <div class="col">
+                      <div class="card">
+                          <img src="assets/images/cowpeas.png" class="card-img-top" alt="cowpeas" width="50px" height="150px">
+                          <div class="card-body">
+                              <h3 class="card-title">COWPEAS</h3>
+                              
+                          </div>
+                      </div>
                   </div>
-              </div>
-          </div>
-          <div class="col">
-              <div class="card">
-                  <img src="assets/images/rice.png" class="card-img-top" alt="rice" width="50px" height="150px">
-                  <div class="card-body">
-                      <h3 class="card-title"> RICE</h3>
-                      <ul class="card-text">
-                        <li>stock in: 300bags</li>
-                        <li>stock out: 240bags</li>
-                        <li>Available: 60bags</li>
-                        </ul>
+                  <div class="col">
+                      <div class="card">
+                          <img src="assets/images/gnuts.png" class="card-img-top" alt="gnuts" width="50px" height="150px">
+                          <div class="card-body">
+                              <h3 class="card-title"> G-NUTS</h3>
+                              
+                          </div>
+                      </div>
                   </div>
-              </div>
+                  <div class="col">
+                      <div class="card">
+                          <img src="assets/images/rice.png" class="card-img-top" alt="rice" width="50px" height="150px">
+                          <div class="card-body">
+                              <h3 class="card-title"> RICE</h3>
+                              
+                          </div>  
+                      </div>
+                  </div>
+              </div>  
           </div>
+        </div>
       </div>
-
+    </div> 
 </main>
-
-
-
-
 
 <footer>
   <div class="footer-container">
     <div class="footer-section about">
       <h2>About Us</h2>
-      <p>Happy Hoe Grocery Ltd. is a leading wholesale produce distributor. We pride ourselves on providing fresh and quality produce to our customers.</p>
+      <p>Happy Hoe Grocery Ltd. is an umbrella of KGL a leading wholesale store. We pride ourselves on providing fresh and quality grains and cereals to our customers.</p>
     </div>
     <div class="footer-section quick-links">
       <h2>Quick Links</h2>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="index.html">Products</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
       </ul>
     </div>
     <div class="footer-section contact">
       <h2>Contact Us</h2>
-      <p><i class="fas fa-map-marker-alt"></i> 1234 Street, City, Country</p>
-      <p><i class="fas fa-phone"></i> +123 456 7890</p>
+      <p><i class="fas fa-map-marker-alt"></i> 1234 Street,Kampala,Uganda</p>
+      <p><i class="fas fa-phone"></i> +256 780730595</p>
       <p><i class="fas fa-envelope"></i> info@happyhoegrocery.com</p>
     </div>
     <div class="footer-section social-media">
       <h2>Follow Us</h2>
       <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-facebook-f">facebook</i></a>
+        <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+        <a href="#"><i class="fab fa-linkedin-in"></i>linkendin</a>
       </div>
     </div>
-    <div class="footer-section newsletter">
-      <h2>Newsletter</h2>
-      <form>
-        <input type="email" placeholder="Your Email" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
+    
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2024 Happy Hoe Grocery Ltd. | Designed by Your Name</p>
+    <p>&copy; 2024 Happy Hoe Grocery Ltd. | Designed by ESTER NALUBWAMA</p>
   </div>
 </footer>
 

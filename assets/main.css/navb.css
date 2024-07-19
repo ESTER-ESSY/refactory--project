@@ -1,4 +1,61 @@
+.title{
+  font-size: 50px;
+  font-style: inherit;
+  color: yellowgreen;
+  text-align: center;
+}
+.text{
+  font-size: 20px;
+  font-style: italic;
+  color: orangered;
+  text-align: center;
 
+}
+.button{
+  background-color: yellowgreen;
+  background-blend-mode: normal;
+  text-decoration-color: #ff9900;
+}
+
+.btn{
+  background-color:orangered;
+  background-blend-mode: normal;
+  text-decoration-color: #ff9900;
+  
+}
+.welcome{
+  font-size: 90px;
+  font-style: italic;
+  color: #ff9900;
+}
+
+.text-2{
+  font-size: 15px;
+  color: #ff9900;
+  text-align: center;
+  background-color: rgb(3, 78, 78)
+}
+.text-3{
+  color: yellowgreen;
+  background-color: rgb(54, 141, 112);
+  padding-block: 10px;
+  padding-left: 20px;
+}
+.text-4{
+  text-align: center;
+  color: yellowgreen;
+  background-color: rgb(54, 141, 112);
+  padding-block: 10px;
+}
+
+.dropdown-menu {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color:greenyellow;
+  padding: 14px 16px;
+  background-color:rgba(0, 128, 0, 0.76);
+}
 
 
 
