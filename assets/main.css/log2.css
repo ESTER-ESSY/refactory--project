@@ -1,0 +1,75 @@
+/*style.css*/
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background: rgb(183, 184, 181)
+    flex-direction: column;
+    margin: 0;
+}
+
+.container-fluid{
+    background-color:rgb(182, 157, 111);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px 20px;
+    transition: transform 0.2s;
+    width: 800px;
+    text-align:center;
+    
+}
+
+h1 {
+    color:#4CAF50;
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #3c853c;
+    width:40%;
+    font-size: 16px;
+}
+h5{
+    color: black;
+    text-align: center;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .rounded-pill{
+    border-radius: 10px;
+ }
