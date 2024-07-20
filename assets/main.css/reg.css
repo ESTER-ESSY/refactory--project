@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    background-color: wheat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    width: 600px;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    box-shadow: 20px 20px 20px hsla(0, 6%, 7%, 0.226);
+    margin-top: 60px;
+}
+
+.form{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
