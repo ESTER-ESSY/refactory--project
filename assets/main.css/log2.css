@@ -7,7 +7,7 @@ body {
     line-height: 1.5;
     min-height: 100vh;
     background: rgb(183, 184, 181)
-    flex-direction: column;
+    flex-direction  column;
     margin: 0;
 }
 

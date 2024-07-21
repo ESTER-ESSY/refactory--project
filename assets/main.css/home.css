@@ -1,0 +1,19 @@
+.btn{
+    background-color:rgba(128, 128, 128, 0.048);
+}
+
+body {
+    background-color: brown;
+}
+
+.card{
+    width: 600px;
+    height: 300px;
+}
+
+.card2{
+    width: 100%;
+}
+.container {
+    width: 1700px ;
+}
