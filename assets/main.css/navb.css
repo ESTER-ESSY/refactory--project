@@ -12,15 +12,13 @@
 
 }
 .button{
-  background-color: yellowgreen;
+  background-color: rgb(159, 167, 145);
   background-blend-mode: normal;
   text-decoration-color: #ff9900;
 }
 
 .btn{
-  background-color:greenyellow;
-  background-blend-mode: normal;
-  text-decoration-color: #ff9900;
+  
   
 }
 .welcome{
