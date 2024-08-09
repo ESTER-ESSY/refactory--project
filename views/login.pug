@@ -1,0 +1,33 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title login
+  link(rel='stylesheet', href='assets/bootstrap-5.3.3-dist/css/bootstrap.min.css')
+  link(rel='stylesheet', href='assets/main.css/log2.css')
+.container
+  .container
+    a.navbar-brand(href='index.html')
+      img.rounded-pill(src='assets/images/logo2.png', alt='logo', style='width:100px;')
+  h1 welcome to KGL
+  h5 Please log in to continue!
+  .container-fluid
+    form(action='')
+      label(for='User name or Email')
+        | Username or Email:
+      input#first(type='text', name='first', placeholder='Enter your Username or Email', required='')
+      label(for='password')
+        | Password:
+      input#password(type='password', name='password', placeholder='Enter your Password', required='')
+      .container(style='background-color:#f1f1f1')
+        span.psw
+          a(href='#')  Forgot password?
+        .wrap
+          button(type='submit', onclick='solve()')
+            | Submit
+    p
+      | Not registered?
+      a(href='register.html', style='text-decoration: none;')
+        | Create an account
+script(src='assets/js/main.js/log.js')
+script(src='assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js')

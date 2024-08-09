@@ -1,0 +1,36 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Sign Up
+  link(rel='stylesheet', href='assets/bootstrap-5.3.3-dist/css/bootstrap.min.css')
+  link(rel='stylesheet', href='assets/main.css/reg.css')
+.form-container
+  h1 Sign Up
+  form#form.form
+    label(for='username') Name
+    input#username(type='text', name='username', required='')
+    br
+    label(for='email') Email
+    input#email(type='email', name='email', required='')
+    br
+    label(for='roles') Roles
+    select#roles(name='roles')
+      option(value='admin') Admin
+      option(value='manager') Manager
+      option(value='salesagent') Sales Agent
+    br
+    label(for='branch') Branch
+    select#branch(name='branch')
+      option(value='matuga') matuga
+      option(value='maganjo') maganjo
+    br
+    label(for='password')  Password
+    input#password(type='password', name='password', required='')
+    br
+    label(for=' confirmpassword') confirm password
+    input#confirmpassword(type='password', name='confirmpassword', required='')
+    br
+    button#submit(type='submit') Submit
+script(src='assets/main.js/regex.js')
+script(src='assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js')

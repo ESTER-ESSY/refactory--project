@@ -1,23 +1,21 @@
 body{
     margin: 0;
-    background-color:whitesmoke;
+    background-color: wheat;
     font-family: Arial, sans-serif;
     display: flex;
-    align-content: center;
+    justify-content: center;
     align-items: center;
 }
 
 .form-container{
     width: 600px;
     display: flex;
-    align-content: center;
-    justify-content: center;
     padding: 40px;
+    justify-content: center;
     flex-direction: column;
-    background-color: rgb(119, 118, 118);
+    background-color: whitesmoke;
     box-shadow: 20px 20px 20px hsla(0, 6%, 7%, 0.226);
     margin-top: 60px;
-
 }
 
 .form{
@@ -26,16 +24,6 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-h1{
+ h1{
     text-align: center;
-    color: greenyellow;
-}
-
-h5{
-    text-align: center;
-    color: orangered;
-}
-.container-fluid{
-    align-content: center;
-    justify-content: center;
-}
+ }
