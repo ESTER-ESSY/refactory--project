@@ -1,0 +1,81 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Procurement
+    link(rel='stylesheet', href='../bootstrap-5.3.3-dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/main.css/procure.css')
+  body
+    .container(bg-light='')
+      h1 Register Produce
+      form
+        .form-group(action='' method='POST' name='produceProcured')
+          label.form-label(for='Name') Name of produce 
+          select#type.form-control(type='text' name='produceName')
+          option(value='')select produce Name 
+          option(value='beans') Beans 
+          option(value='maize') maize 
+          option(value='soyabeans') soya beans
+          option(value='cowpeas') cow peas 
+          option(value='Rice') Rice 
+         
+          
+        .form-group
+          label.form-label(for='Type') Type of produce 
+          select#type.form-control(type='text' name='produceType')
+          option(value='')select produce Type 
+          option(value='grains') Grains
+          option(value='legume') Legume 
+          
+          
+        .row
+          .col-sm-6
+            label.form-label(for='Date') Date
+            input#date.form-control(type='date' name = 'date')
+          .col-sm-6
+            label.form-label(for='time') Time
+            input#time.form-control(type='time' name = 'time')
+        .row
+          .col-sm-4
+            label.form-label(for='Quantity') Quantity (kgs)
+            input#quantity.form-control(type='number' name = 'quantity' )
+          .col-sm-4
+            label.form-label(for='Unit cost')  Unit cost
+            input#price.form-control(type='number' name ='unitCost')
+          .col-sm-4
+            label.form-label(for='Unit cost') Total cost
+            input#price.form-control(type='number' name = 'totalcost')
+        .form-group
+          .row
+            .col-sm-6
+              label.form-label(for='Branch') Branch
+              .form-control
+                select#branch.form-control(type = name='branch')
+                option(value='') select Branch
+                  option(value='matuga') Matuga
+                  option(value='maganjo') Maganjo
+                br
+            .col-sm-6
+              label.form-label(for='name') source of produce
+              Select#dealer.form-control(type='text' name ='produceSource')
+              option(value='')select produce source 
+          option(value='beans') Maganjo Farm 
+          option(value='maize') Matugga Farm 
+          option(value='soyabeans') Dealer
+          option(value='otherothere') Others
+          
+         
+          
+        .row
+          .col-sm-6
+            label.form-label(for='') If Dealer, Name of Dealer
+            input#dealer.form-control(type='text' name ='dealerName')
+            .col-sm-6
+            label.form-label(for='') If others, Name of supplier
+            input#dealer.form-control(type='text' name ='supplierName')
+        .row
+          .col-sm-12 
+            label.form-label(for="")  Selling price
+            input#price.form-control(type='number' name ='sellingPrice')
+        button.btn.btn-success(type='submit') Submit

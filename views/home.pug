@@ -1,0 +1,84 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title dashboard
+  link(rel='stylesheet', href='../assets/bootstrap-5.3.3-dist/css/bootstrap.min.css')
+  link(rel='stylesheet', href='../assets/main.css/home.css')
+nav.navbar.navbar-expand-sm.bg-secondary.navbar-dark
+  .container-fluid
+    a.navbar-brand(href='index.html')
+      img.rounded-pill(src='../assets/images/logo2.png', alt='logo', style='width:100px;')
+    a.navbar-brand(href='#') KGL
+    button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#collapsibleNavbar')
+      span.navbar-toggler-icon
+    #collapsibleNavbar.collapse.navbar-collapse
+      ul.navbar-nav
+        button.btn(type='button', id='')
+          li.nav-item
+            a.nav-link(href='aboutus.pug') About us
+        button.btn(type='button', id='')
+          li.nav-item
+            a.nav-link(href='products.pug') Products
+        button.btn(type='button', id='')
+          li.nav-item
+            a.nav-link(href='inventory.pug') Stock
+main
+  .container.mt-3
+    .d-grid.gap-3
+      .card.bg-success.text-dark
+        button#button.btn.btn-secondary.btn-block.btn-lg(type='button')
+          a.text.decoration.text-decoration-none(href='login.pug ', style='color:white') Administrator
+      .card.bg-success.text-dark
+        button#button.btn.btn-secondary.btn-lg(type='button')
+          a.text.decoration.text-decoration-none(href='login.pug ', style='color:white') Manager
+      .card.bg-success.text-dark
+        button#button.btn.btn-secondary.btn-lg(type='button')
+          a.text.decoration.text-decoration-none(href='login.pug ', style='color:white') Sales Agent
+footer
+  .container-fluid
+    .footer-container
+      .footer-section.about
+        h2 About Us
+        p
+          | Happy Hoe Grocery Ltd. is an umbrella of KGL a leading wholesale store. We pride ourselves on providing fresh and quality grains and cereals to our customers.
+      .footer-section.quick-links
+        h2 Quick Links
+        ul
+          li
+            a(href='index.pug') Home
+          li
+            a(href='aboutus.pug') About Us
+          li
+            a(href='index.pug') Products
+          li
+            a(href='contactus.pug') Contact Us
+      .footer-section.contact
+        h2 Contact Us
+        p
+          i.fas.fa-map-marker-alt
+          |  1234 Street,Kampala,Uganda
+        p
+          i.fas.fa-phone
+          |  +256 780730595
+        p
+          i.fas.fa-envelope
+          |  info@happyhoegrocery.com
+      .footer-section.social-media
+        h2 Follow Us
+        .social-icons
+          a(href='#')
+            i.fab.fa-facebook-f facebook
+          a(href='#')
+            i.fab.fa-twitter
+            | Twitter
+          a(href='#')
+            i.fab.fa-instagram
+            | Instagram
+          a(href='#')
+            i.fab.fa-linkedin-in
+            | linkendin
+    .footer-bottom
+      p &copy; 2024 Happy Hoe Grocery Ltd. | Designed by ESTER NALUBWAMA
+script(src='../assets/js/main.js/home.js.js')
+script(src='../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js')

@@ -3,36 +3,36 @@ head
   meta(charset='UTF-8')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
   title dashboard
-  link(rel='stylesheet', href='assets/bootstrap-5.3.3-dist/css/bootstrap.min.css')
-  link(rel='stylesheet', href='assets/main.css/navb.css')
+  link(rel='stylesheet', href='../bootstrap-5.3.3-dist/css/bootstrap.min.css')
+  link(rel='stylesheet', href='/main.css/navb.css')
 header
   nav.navbar.navbar-expand-sm.bg-white
     .container-fluid
       nav.navbar.navbar-expand-sm.bg-white.navbar-dark
         .container-fluid
-          a.navbar-brand(href='index.html')
-            img.rounded-pill(src='assets/images/logo2.png', alt='logo', style='width:100px;')
+          a.navbar-brand(href='index.pug')
+            img.rounded-pill(src='/images/logo2.png', alt='logo', style='width:100px;')
     nav
       #mynavbar.collapse.navbar-collapse
         .right-side-section
           .btn
             button.btn.btn-warning.btn-lg.text-white(type='button')
-              a.text-decoration-none(href='home.html') LOGIN
+              a.text-decoration-none(href='/login') LOGIN
 main
   #demo.carousel.slide(data-bs-ride='carousel')
     .carousel-inner
       .carousel-item.active
-        img.carousel(src='/assets/images/bags.png', alt='bags', style='width:100%', height='400px')
+        img.carousel(src='/images/bags.png', alt='bags', style='width:100%', height='400px')
         .carousel-caption.d-none.d-md-block
           h1.welcome Welcome To KGL
           p &quot;Your number one cereal and grains center&quot;
       .carousel-item
-        img.carousel(src='/assets/images/workers.png', alt='creals', style='width:100%', height='400px')
+        img.carousel(src='/images/workers.png', alt='creals', style='width:100%', height='400px')
         .carousel-caption.d-none.d-md-block
           h1.welcome Welcome To KGL
           p &quot;Your number one cereal and grains center&quot;
       .carousel-item
-        img.carousel(src='/assets/images/seeds.png', alt='cereals', style='width:100%', height='400px')
+        img.carousel(src='/images/seeds.png', alt='cereals', style='width:100%', height='400px')
         .carousel-caption.d-none.d-md-block
           h1.welcome Welcome To KGL
           p &quot;Your number one cereal and grains center&quot;
@@ -66,22 +66,22 @@ main
             .row
               .col
                 .card
-                  img.card-img-top(src='assets/images/maize.png', alt='maize', width='50px', height='150px')
+                  img.card-img-top(src='/images/maize.png', alt='maize', width='50px', height='150px')
                   .card-body
                     h3.card-title  MAIZE
               .col
                 .card
-                  img.card-img-top(src='assets/images/cowpeas.png', alt='cowpeas', width='50px', height='150px')
+                  img.card-img-top(src='/images/cowpeas.png', alt='cowpeas', width='50px', height='150px')
                   .card-body
                     h3.card-title COWPEAS
               .col
                 .card
-                  img.card-img-top(src='assets/images/gnuts.png', alt='gnuts', width='50px', height='150px')
+                  img.card-img-top(src='/images/gnuts.png', alt='gnuts', width='50px', height='150px')
                   .card-body
                     h3.card-title  G-NUTS
               .col
                 .card
-                  img.card-img-top(src='assets/images/rice.png', alt='rice', width='50px', height='150px')
+                  img.card-img-top(src='/images/rice.png', alt='rice', width='50px', height='150px')
                   .card-body
                     h3.card-title  RICE
 footer
@@ -94,13 +94,13 @@ footer
       h2 Quick Links
       ul
         li
-          a(href='index.html') Home
+          a(href='/') Home
         li
-          a(href='aboutus.html') About Us
+          a(href='/aboutus') About Us
         li
-          a(href='index.html') Products
+          a(href='/') Products
         li
-          a(href='contactus.html') Contact Us
+          a(href='/contactus') Contact Us
     .footer-section.contact
       h2 Contact Us
       p
@@ -128,5 +128,5 @@ footer
           | linkendin
   .footer-bottom
     p &copy; 2024 Happy Hoe Grocery Ltd. | Designed by ESTER NALUBWAMA
-script(src='assets/js/main.js/navb.js')
-script(src='assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js')
+script(src='/js/main.js/navb.js')
+script(src='../bootstrap-5.3.3-dist/js/bootstrap.bundle.js')

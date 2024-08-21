@@ -1,0 +1,33 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Contact us
+  link(rel='stylesheet', href='../assets/bootstrap-5.3.3-dist/css/bootstrap.min.css')
+  link(rel='stylesheet', href='../assets/main.css/contact.css')
+.container.container-fluid.bg-success.text-white.text-center
+  h2 Happy Hoe Grocery Ltd
+  p number one grocery store for all ceareals and grains
+.container
+  div(style='text-align:center')
+    h2(style='color: orangered;') Contact Us
+    p
+  .row
+    .column
+      img(src='../assets/images/logo2.png', style='width:100%')
+    .column
+      form(action='/action_page.php')
+        label(for='fname') First Name
+        input#fname(type='text', name='firstname', placeholder='Your name..')
+        label(for='lname') Last Name
+        input#lname(type='text', name='lastname', placeholder='Your last name..')
+        label(for='country') Country
+        select#district(name='district')
+          option(value='Kampala') Kampala
+          option(value='Wakiso') Wakiso
+          option(value='Mukono') Mukono
+          option(value='Masaka') Masaka
+          option(value='Others') others
+        label(for='subject') Subject
+        textarea#subject(name='subject', placeholder='Write something..', style='height:170px')
+        input(type='submit', value='Submit')
