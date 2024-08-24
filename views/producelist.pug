@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Procurement
+    link(rel='stylesheet', href='../bootstrap-5.3.3-dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/main.css/producelist.css')
+  body
+
+.container
+h2.text-center.mt-5.mb-4 produce List
+table.table.table-striped
+thead
+tr
+th(scope='col') Produce Name
+th(scope='col') Branch
+th(scope='col') Tonnage (Kg)
+th(scope='col') Produce Cost per Kg(UGX)
+th(scope='col') Produce Source
+th(scope='col') Contact
+th(scope='col') Selling Price per Kg(UGX)
+th(scope='col') Action
+th
+th
+tbody
+if produces.length
+each produce in produces
+tr
+td #{produce.produceName}
+td #{produce.branch}
+td #{produce.tonnage}
+td #{produce.produceCost}
+td #{produce.produceSource}
+td #{produce.contact}
+td #{produce.sellingPrice}
+td
+a.btn.btn-secondary.btn-sm(href='/addSale/'+produce._id) Make Sale
+td
+a.btn.btn-primary.btn-sm(href='/updateProduce/'+produce._id) Update
+td
+form(method="post" action='/deleteProduce')
+input(type="hidden", placeholder="", name="id", value=produce._id)
+button.btn.btn-danger.btn-sm(type="submit") Delete
+else
+p No produce yet :(

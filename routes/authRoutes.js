@@ -5,7 +5,7 @@ const passport = require("passport");
 
 
 //import model
-const Signup = require("../models/signUp");
+const signUp = require("./models/signUp");
 
 //get Signup page
 router.get("/addUser", (req, res)=>{
@@ -15,15 +15,15 @@ router.get("/addUser", (req, res)=>{
 //add user
 router.post("/addUser", async (req, res ) =>{
     try{
-        const existingUser = await Signup.findOne({email:req.body.email});
+        const existingUser = await signup.findOne({email:req.body.email});
         if (existingUser) {
             return res
             .status(400)
             .send("Not registered, a user with a similar email already exists!");
         }
-        const user = new Signup(req.body);
-        await user.Save()
-        await Signup.register(user, req.body.password, (err) =>{
+        const user = new signup(req.body);
+        await user.save()
+        await signUpignup.register(user, req.body.password, (err) =>{
             if (err) {
                 throw err;
             }

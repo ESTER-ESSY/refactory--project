@@ -13,7 +13,7 @@ const expressSession = require("express-session")({
 require('dotenv').config();
 
 //import models
-const SignUp = require('./models/signUp')
+const signUp = require('../models/signUp')
 
 //importing routes
 const authRoutes = require("./routes/authRoutes");
@@ -73,9 +73,9 @@ app.use(passport.session());
 
 //passport configs
 
-passport.use(SignUp.createStrategy()); // use the local strategy
-passport.serializeUser(SignUp.serializeUser()); // assign a serial number to a user in the system
-passport.deserializeUser(SignUp.deserializeUser()); // the serial number is destroyed on log out
+//passport.use(signUp.createStrategy()); // use the local strategy
+//passport.serializeUser(signUp.serializeUser()); // assign a serial number to a user in the system
+//passport.deserializeUser(signUp.deserializeUser()); // the serial number is destroyed on log out
 
 
 

@@ -20,21 +20,20 @@ const signUpSchema = new mongoose.Schema({
         unique: true
         
     },
-    password: {
-        type: String,
-        trim: true,
-        unique: true
-    },
+    
     role: {
         type: String,
+        trim: true,
     
     },
     Gender: {
         type: String,
+        trim: true,
         
     },
     branch: {
         type: String,
+        trim: true
         
     },
 });
